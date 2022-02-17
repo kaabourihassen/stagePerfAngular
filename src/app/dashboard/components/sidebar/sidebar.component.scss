@@ -1,9 +1,16 @@
 .linkWithIcon{
-  @apply flex items-center space-x-2 font-semibold w-full p-4 text-gray-800 hover:text-blue-600 hover:bg-blue-100 rounded-lg transition cursor-pointer;
+  @apply flex items-center space-x-2 font-semibold w-full p-4 text-gray-800 hover:text-blue-600 hover:bg-blue-100/40 rounded-lg transition cursor-pointer;
+  svg,span{
+    @apply text-white;
+  }
   span{
     white-space: nowrap;
   }
 }
 .activeRouter{
-  @apply bg-blue-100;
+  @apply bg-white hover:bg-white;
+  span,svg{
+    @apply text-blue-600
+  }
 }
+

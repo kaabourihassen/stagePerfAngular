@@ -13,7 +13,7 @@
       <p class="font-semibold text-gray-700">Nom Cotegory</p>
       <p class="font-semibold text-gray-700">Actions</p>
     </div>
-    <div class="mt-6">
+    <div class="mt-6  overflow-scroll h-96">
       <app-materiel *ngFor="let materiel of materielsList; let i=index" [index]="i" [materiel]="materiel"></app-materiel>
     </div>
   </div>

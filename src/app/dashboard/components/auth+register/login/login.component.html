@@ -1,8 +1,8 @@
-<div class="flex justify-between h-screen items-center">
-  <section class="text-blueGray-700 flex-1 bg-blue-50 h-screen flex items-center">
-    <div class="container items-center px-5 py-12 lg:px-20">
-      <div class="flex flex-col w-full max-w-md p-10 mx-auto my-6 transition duration-500 ease-in-out transform bg-white rounded-lg md:mt-0">
-        <h1 class="text-4xl font-bold text-gray-800">Log In</h1>
+<div class="flex justify-between h-screen items-center justify-center flex-wrap">
+  <section class="w-full  text-blueGray-700 bg-blue-500 h-screen flex items-center">
+    <div class="w-full items-center px-5 py-12 lg:px-20">
+      <div class="flex flex-col w-full max-w-md p-10 mx-auto my-6 transition ease-in-out transform bg-white rounded-lg md:mt-0">
+        <h1 class="text-4xl font-bold text-gray-800">Login</h1>
 
         <div class="mt-8">
           <div class="mt-6">
@@ -29,12 +29,15 @@
                   <input id="remember-me" name="remember-me" type="checkbox" placeholder="Your password" class=" w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
                   <label for="remember-me" class="block ml-2 text-sm text-neutral-600"> Remember me </label>
                 </div>
-                <div class="text-sm">
-                  <a href="#" class="font-medium text-blue-600 hover:text-blue-500" [routerLink]="['/register']"> Register </a>
-                </div>
+
               </div>
               <div>
                 <button type="submit" class="submitButton" (click)="login()"> Sign in </button>
+
+                <div class="w-full flex justify-center py-2">
+                  <a href="#" class="font-medium text-blue-600 hover:text-blue-500" [routerLink]="['/register']"> Create an Account </a>
+                </div>
+
               </div>
             </form>
           </div>
@@ -42,7 +45,5 @@
       </div>
     </div>
   </section>
-  <div class="illustrationContainer max-w-4xl">
-    <img src="/assets/LoginIllustration.png" alt="">
-  </div>
+
 </div>

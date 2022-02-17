@@ -5,7 +5,6 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { SidebarComponent } from './dashboard/components/sidebar/sidebar.component';
 import { ArticleComponent } from './dashboard/components/units/article/article.component';
 import { MaterielComponent } from './dashboard/components/units/materiel/materiel.component';
@@ -47,6 +46,7 @@ import { MaterielFormVComponent } from './dashboard/components/forms/createForms
 import { ArticlesDashboardComponent } from './dashboard/containers/articles/articles-dashboard/articles-dashboard.component';
 import { MaterielsDashboardComponent } from './dashboard/containers/materiels/materiels-dashboard/materiels-dashboard.component';
 import { NotFoundComponent } from './dashboard/components/units/not-found/not-found.component';
+import { BlurShapeComponent } from './dashboard/components/units/blur-shape/blur-shape.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +89,8 @@ import { NotFoundComponent } from './dashboard/components/units/not-found/not-fo
     MaterielFormVComponent,
     ArticlesDashboardComponent,
     MaterielsDashboardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    BlurShapeComponent
   ],
   imports: [
     BrowserModule,
