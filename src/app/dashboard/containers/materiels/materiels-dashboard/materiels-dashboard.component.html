@@ -1,0 +1,19 @@
+<div class="flex flex-col w-auto rounded-lg m-15 p-6">
+  <div class="flex w-full justify-between items-center p-4 mb-8">
+    <h1 class="text-4xl font-bold text-blue-600">Materiels Dashboard</h1>
+  </div>
+  <div class="flex w-full justify-between items-center p-4 mb-8">
+    <a [routerLink]="['/materielsDashboard/materielsList']" class="linkWithIcon" routerLinkActive="activeRouter">
+      <span class="justify-center items-center">
+        Listes des Materiels
+      </span>
+    </a>
+    <a [routerLink]="['/materielsDashboard/operationsMaterielsList']" class="linkWithIcon" routerLinkActive="activeRouter">
+      <span class="justify-center items-center">
+        Listes des Operations sur Materiels
+      </span>
+    </a>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
