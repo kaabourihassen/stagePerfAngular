@@ -49,7 +49,7 @@ export class OperationArticleFormComponent implements OnInit {
     }
     console.log(operation)
     this._operationService.createOperation(operation).subscribe()
-    this._router.navigate(['operationsArticlesList'])
+    this._router.navigate(['articlesDashboard/operationsArticlesList'])
   }
   getUsersAndArticles(){
     this._articleService.getArticles().subscribe(data => this.produitList = data)

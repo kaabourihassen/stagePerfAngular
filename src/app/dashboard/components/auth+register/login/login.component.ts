@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
       password : this.form.get("password")?.value
     }
     this._authService.login(user).subscribe(response =>{
+      console.log(response)
         const user = new UserSession(
           response.token,
           response.id,

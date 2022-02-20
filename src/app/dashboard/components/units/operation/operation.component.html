@@ -1,8 +1,7 @@
-<div class="flex w-full justify-between items-center p-4 rounded-lg"[ngClass]="!(index % 2) ? 'bg-gray-100': 'bg-white'">
+<div class="flex flex-cols justify-between items-center p-4 rounded-lg"[ngClass]="!(index % 2) ? 'bg-gray-100': 'bg-white'">
   <p class="text-gray-700">{{operation.natureOperation!}}</p>
   <p class="text-gray-700">{{operation.produit.matricule!}}</p>
   <p class="text-gray-700" *ngIf="!!operation.qte">{{operation.qte!}}</p>
-  <p class="text-gray-700" *ngIf="!!operation.datePrise">{{operation.datePrise!}}</p>
   <p class="text-gray-700">{{operation.dateRetour!}}</p>
   <p class="text-gray-700">{{operation.user?.fullName!}}</p>
   <div class="flex space-x-4 text-gray-600">

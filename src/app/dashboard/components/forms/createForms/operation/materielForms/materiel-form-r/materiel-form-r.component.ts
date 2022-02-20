@@ -45,7 +45,7 @@ export class MaterielFormRComponent implements OnInit {
     }
     console.log(operation)
     this._operationService.createOperation(operation).subscribe()
-    this._router.navigate(['operationsMaterielsList'])
+    this._router.navigate(['materielsDashboard/operationsMaterielsList'])
   }
 
   getUsersAndMateriels(){
